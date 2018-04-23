@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int stringx(char *s,char *c);
+
+int main()
+{
+	char kracistr[]="Kraci string";
+	char duzistr[]="Ovo je duzi string";
+
+	int kopiraj;
+
+	kopiraj = stringx(kracistr, duzistr);
+	printf("string posle kopiranja: %s \n", duzistr);
+	printf("duzina: %d \n", kopiraj);
+	return 0;
+}
